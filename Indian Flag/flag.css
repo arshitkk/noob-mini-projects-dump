@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stick{
+    background-color: brown;
+    height: 20rem;
+    width: 0.4rem;
+    border: 4px solid black;
+    border-radius: 10rem;
+}
+
+
+.items{
+    height: 2rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    animation-name: jaihind;
+    animation-duration:1s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;
+    animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@keyframes jaihind{
+    0%{
+        height: 2rem;
+        width: 0rem;
+    }
+
+    100%{
+        height: 2rem;
+        width: 10rem;
+    }
+}
+
+#saffron{
+    background-color: orange;
+}
+
+#green{
+    background-color: green;
+}
+
+#white{
+display: flex;
+justify-content: center;
+background-color: white;
+}
+
+.chakra{
+    border: 1px solid black;
+    height: 30px;
+    width: 31px;
+    border-radius: 50%;
+    background-color: black;
+}
+body{
+    transform: scale(2);
+}

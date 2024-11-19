@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgb(199, 136, 136) 3%, blue 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    padding: 16px;
+    height:auto;
+    width:50%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.search{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 8px;
+    height:28px;
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.29);
+    border-radius: 80px;
+    padding-right: 0;
+    margin-bottom: 3rem;
+}
+.search input{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.search button{
+    color: white;
+    height: 27px;
+    width: 17%;
+    background: linear-gradient(to bottom, rgb(199, 136, 136) 3%, blue 91%);
+    border-radius: 20px;
+    border: none;
+}
+.search button:active{
+    transform: scale(0.9);
+}
+
+ul li{
+    padding: 3px;
+    margin: 10px;
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+
+
+
+li::before{
+    content: "X";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    height: 20px;
+    width:  20px;
+    font-size: smaller;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.6rem;
+    background: linear-gradient(to bottom, rgb(199, 136, 136) 3%, blue 91%);
+    background: white;
+}
+
+ul li.checked{
+    display: flex;
+    text-decoration:line-through;
+    color: rgba(0, 0, 0, 0.542);
+    cursor: pointer;
+}
+ul li.checked::before{
+    content: "X";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    height: 20px;
+    width:  20px;
+    font-size: smaller;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 0.6rem;
+    background: linear-gradient(to bottom, rgb(199, 136, 136) 3%, blue 91%);
+}
+span{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 30px;
+    width: 30px;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    left: 88%;
+    bottom: 2.6rem;
+}
+span:hover{
+    background-color: rgba(0, 0, 0, 0.291);
+}

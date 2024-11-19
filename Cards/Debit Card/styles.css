@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg{
+background-color: #8BC6EC;
+background-image: -webkit-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+background-image: -moz-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+background-image: -o-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.card{
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 16rem;
+    width: 28rem;
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0) 5px 4px 14px 1px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.mastercard_logo{
+    height: 70px;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+
+.chip{
+    height: 53px;
+    padding-top: 27px;
+    padding-right: 15px;
+}
+.title{
+    color:white;
+    padding-top: 15px;
+    translate:-49px ;
+    font-size: 1.3rem;
+}
+
+.card_info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.card_name{
+    font-size: small;
+}
+
+.number{
+    font-size: 1.5rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    margin-top: 20px;
+    font-size: 19px;
+    margin-left: 4px;
+}
+
+.val{
+    display: flex;
+    flex-direction: column;
+    translate: 16px 5px;
+}

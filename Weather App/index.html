@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Weather App</h1>
+        <div class="tab-container">
+            <div class=" tab user-tab">Your Weather</div>
+            <div class="tab search-tab">Search Weather</div>
+        </div>
+        <div class="grant-location-container">
+            <img src="./images/location.png" class="location-img">
+            <h1>Grant Location Access</h1>
+            <p class="location-p">Allow Access to get weather Information</p>
+            <button class="grant-btn">Grant Access</button>
+        </div>
+
+        <div class="search-bar">
+            <form class="search-form">
+                <input type="text" placeholder="Search  for a city" class="search-input">
+                <button class="search-btn" type="submit">
+                    <img src="./images/search.png" class="search-icon">
+                </button>
+            </form>
+        </div>
+        <div class="loading">
+            <img src="./images/loading.gif" class="loading-img">
+        </div>
+
+        <div class="weather-info-container">
+            <div class="place-section">
+                <p class="city-name">Jammu</p>
+                <img class="country-icon" src="https://flagcdn.com/144x108/in.png">
+            </div>
+            <p class="weather-desc">Clear Sky</p>
+            <img class="weather-icon" src="http://openweathermap.org/img/w/01d.png">
+            <p class="weather-temp">32.95 °C</p>
+
+            <div class="weather-parameters">
+                <div class="parameter">
+                    <img src="./images/wind.png">
+                    <p>WINDSPEED</p>
+                    <p class="windspeed">1.53 m/s</p>
+                </div>
+                <div class="weather-parameters">
+                    <div class="parameter">
+                        <img src="./images/humidity.png">
+                        <p>HUMIDITY</p>
+                        <p class="humidity">40%</p>
+                    </div>
+                    <div class="weather-parameters">
+                        <div class="parameter">
+                            <img src="./images/cloud.png">
+                            <p>CLOUDS</p>
+                            <p class="clouds">12%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+</body>
+
+</html>
